@@ -9,90 +9,106 @@
   </head>
   <body>
     <div class="container">
-<!--About-->
-      <div id="about">
-        <h2>About</h2>
-        <h3>Created by</h3>
-        <p><em>Paul Guevarra</em>, July 21, 2017</p>
-        <h3>GitHub Username/URL:</h3>
-        <p><a href="https://github.com/paulguevarra">paulguevarra</a></p>
-        <h3>Objectives</h3>
-        <ol>
-          <li>Code meets standards from previous weeks
-            <ul>
-              <li>Use HTML tags: p, h, ul, ol, li, em, strong, a, img, div, span</li>
-              <li>Proper usage of Bootstrap and jQuery</li>
-              <li>Indentation and spacing is accurate</li>
-              <li>JavaScript business logic and user interface logic are separate</li>
-            </ul>
-          </li>
-          <li>Objects drive business logic (in JavaScript, not jQuery)</li>
-          <li>Constructors and prototypes are used successfully</li>
-          <li>Application works as expected</li>
-          <li>Plain English specs are included in my <em>README</em></li>
-          <li>Project is in a polished, portfolio-quality state</li>
-          <li>Project demonstrates an understanding of this week's concepts</li>
-        </ol>
-        <img src="img/pizzalogo.jpg">
+      <div class="row">
+        <div class="well" id="title">
+          <h1>Pizza Shop</h1>
+        </div>
       </div>
-<!--About End-->
-<!--Begin Order-->
-      <div id="beginOrderDiv">
-        <form id="beginOrder">
-          <div class="form-group">
-            <label for="orderStart">Would you like to place and order?</label>
-            <select class="form-control" id="orderStart">
-              <option value="choose">Choose One</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-          </div>
-          <button type="submit" class="btn">Begin Order</button>
-        </form>
-      </div>
-<!--Begin Order End-->
+    </div>
+        <!--About-->
+    <div id="about" class="well">
+      <h2>About</h2>
+      <h3>Created by</h3>
+      <p><em>Paul Guevarra</em>, July 21, 2017</p>
+      <h3>GitHub Username/URL:</h3>
+      <p><a href="https://github.com/paulguevarra">paulguevarra</a></p>
+      <h3>Objectives</h3>
+      <ol>
+        <li>Code meets standards from previous weeks
+          <ul>
+            <li>Use HTML tags: p, h, ul, ol, li, em, strong, a, img, div, span</li>
+            <li>Proper usage of Bootstrap and jQuery</li>
+            <li>Indentation and spacing is accurate</li>
+            <li>JavaScript business logic and user interface logic are separate</li>
+            <li></li>
+          </ul>
+        </li>
+        <li>Objects drive business logic (in JavaScript, not jQuery)</li>
+        <li>Constructors and prototypes are used successfully</li>
+        <li>Application works as expected</li>
+        <li>Plain English specs are included in my <em>README</em></li>
+        <li>Project is in a polished, portfolio-quality state</li>
+        <li>Project demonstrates an understanding of this week's concepts</li>
+      </ol>
+    </div>
+        <!--About End-->
+    <div class="container">
+      <div class="row">
+        <br>
+        <br>
+        <!--Begin Order-->
+        <div id="beginOrderDiv" class="col-sm-6 well">
+          <form id="beginOrder">
+            <div class="form-group">
+              <label for="orderStart">Would you like to place and order?</label>
+              <select class="form-control" id="orderStart">
+                <option value="choose">Choose One</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Begin Order</button>
+          </form>
+          <img src="img/pizzalogo.jpg">
+        </div>
+        <!--Begin Order End-->
 
-<!--Survey Form-->
-      <div id="survey" class="col-sm-4 well">
-        <h1>Place Order Here</h1>
-        <form id="blanks">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input id="name" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="size">Choose a size</label>
-            <select class="form-control" id="size">
-              <option id="small" value="5">Small</option>
-              <option id="medium" value="10">Medium</option>
-              <option id="large" value="15">Large</option>
-              <option id="xlarge" value="20">X-Large</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <p><strong>Choose your toppings:</strong></p>
-            <input type="checkbox" name="topping" value="2"> pepperoni<br>
-            <input type="checkbox" name="topping" value="2"> bacon<br>
-            <input type="checkbox" name="topping" value="2"> anchovies<br>
-            <input type="checkbox" name="topping" value="2"> ham<br>
-            <input type="checkbox" name="topping" value="1"> onions<br>
-            <input type="checkbox" name="topping" value="1"> pineapple<br>
-            <input type="checkbox" name="topping" value="1"> bell pepper<br>
-          </div>
-          <br>
-          <button type="submit" class="btn">Submit Order</button>
-        </form>
+        <!--Survey Form-->
+        <div id="survey" class="col-sm-6 well">
+          <h1>Place Order Here</h1>
+          <form id="blanks">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input id="name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="size">Choose a size</label>
+              <select class="form-control" id="size">
+                <option id="small" value="5">Small</option>
+                <option id="medium" value="10">Medium</option>
+                <option id="large" value="15">Large</option>
+                <option id="xlarge" value="20">X-Large</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p>Meat Toppings: $2.00/choice</p>
+              <p>Non-Meat Toppings: $1.00/choice</p>
+              <p><strong>Choose your toppings:</strong></p>
+              <input type="checkbox" name="topping" value="2"> pepperoni<br>
+              <input type="checkbox" name="topping" value="2"> bacon<br>
+              <input type="checkbox" name="topping" value="2"> anchovies<br>
+              <input type="checkbox" name="topping" value="2"> ham<br>
+              <input type="checkbox" name="topping" value="1"> onions<br>
+              <input type="checkbox" name="topping" value="1"> pineapple<br>
+              <input type="checkbox" name="topping" value="1"> bell pepper<br>
+            </div>
+            <br>
+            <button type="submit" class="btn">Submit Order</button>
+          </form>
+          <img src="img/pizzalogo.jpg">
+        </div>
+        <!--Survey Form End-->
+        <!--Receipt-->
+        <div id="final" class="col-sm-4 well">
+          <p><strong><span id="receipt1"></span></strong> Your order will cost <span id="receipt2"></span></p>
+          <img id="finalPizza" src="img/pizza.png">
+        </div>
+
+        <!--Receipt End-->
+
       </div>
-<!--Survey Form End-->
       <br>
     </div>
-<!--Receipt-->
-    <div class="container">
-      <div id="final">
-        <p><strong><span id="receipt1"></span></strong> Your order will cost <span id="receipt2"></span></p>
-      </div>
-    </div>
-<!--Survey Form End-->
 
   </body>
 </html>

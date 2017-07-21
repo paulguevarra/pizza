@@ -4,3 +4,51 @@
 #survey {
   display: none;
 }
+.well {
+  background-color: #ffe5e5;
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-left: 10px
+
+}
+body {
+  background-image: url("../img/pizzabackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: black;
+}
+img {
+  display: block;
+  margin: auto;
+  border-radius: 80%;
+  border-width: thick;
+  border-color: black;
+  border-style: solid;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-decoration: underline;
+}
+#title {
+  background-color: #ff3333;
+}
+#about {
+  float: left;
+  width: 15%;
+  background-color: #ffffb3
+}
+#final{
+  text-align: center;
+  font-size: 20pt;
+}
+#finalPizza {
+  width: 100%;
+  height: auto;
+}

@@ -1,7 +1,7 @@
 //Business Logic
-function Pizza(size){
+function Pizza(size, topping){
   this.pSize = size;
-  this.pTopping = [];
+  this.pTopping = topping;
 }
 
 Pizza.prototype.toCalc = function(){
@@ -16,9 +16,12 @@ $(document).ready(function(){
     event.preventDefault();
     var inputName = $("input#name").val();
     var output = inputName
-
+    var inputTopping = 0
+    $("input:checkbox[name=topping]:checked").each(function(i, elm){
+      inputTopping += parseInt(elm.value);
+    });
     var inputSize = parseInt($("select#size").val());
-    var newPizza = new Pizza(inputSize)
+    var newPizza = new Pizza(inputSize, inputTopping)
     // alert(newPizza);
 
 

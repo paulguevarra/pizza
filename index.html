@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-<!--Survey Form-->
+<!--About-->
       <div id="about">
         <h2>About</h2>
         <h3>Created by</h3>
@@ -21,7 +21,7 @@
           <li>Code meets standards from previous weeks
             <ul>
               <li>Use HTML tags: p, h, ul, ol, li, em, strong, a, img, div, span</li>
-              <li>Proper usage of Bootstrap and jquery</li>
+              <li>Proper usage of Bootstrap and jQuery</li>
               <li>Indentation and spacing is accurate</li>
               <li>JavaScript business logic and user interface logic are separate</li>
             </ul>
@@ -35,7 +35,22 @@
         </ol>
         <img src="img/pizzalogo.jpg">
       </div>
-<!--Survey Form-->
+<!--About End-->
+<!--Begin Order-->
+      <div id="beginOrderDiv">
+        <form id="beginOrder">
+          <div class="form-group">
+            <label for="orderStart">Would you like to place and order?</label>
+            <select class="form-control" id="orderStart">
+              <option value="choose">Choose One</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Begin Order</button>
+        </form>
+      </div>
+<!--Begin Order End-->
 
 <!--Survey Form-->
       <div id="survey" class="col-sm-4 well">
@@ -73,10 +88,8 @@
     </div>
 <!--Receipt-->
     <div class="container">
-      <div id="receipt">
-        <ul>
-
-        </ul>
+      <div id="final">
+        <p><strong><span id="receipt1"></span></strong> Your order will cost <span id="receipt2"></span></p>
       </div>
     </div>
 <!--Survey Form End-->

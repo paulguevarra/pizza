@@ -12,6 +12,17 @@ Pizza.prototype.toCalc = function(){
 
 //UI Logic
 $(document).ready(function(){
+  $("form#beginOrder").submit(function(event){
+    event.preventDefault();
+    var userStart = $("#orderStart").val();
+    if (userStart === "yes"){
+      $("#survey").show();
+      $("#beginOrderDiv").hide();
+    } else {
+      alert("Think about it and come back when ready.")
+    }
+  });
+
   $("#blanks").submit(function(event){
     event.preventDefault();
     var inputName = $("input#name").val();
@@ -24,8 +35,9 @@ $(document).ready(function(){
     var newPizza = new Pizza(inputSize, inputTopping)
     // alert(newPizza);
 
-
-    $("#receipt").text(output + ",  your order costs $ " + newPizza.toCalc());
+    $("#final").show()
+    $("#receipt1").text(output);
+    $("#receipt2").text( "$" + newPizza.toCalc() + ".00");
 
   });
 });

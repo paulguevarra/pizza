@@ -11,7 +11,7 @@ _This web application will allow a user to choose one or more individual topping
 ## Setup/Installation Requirements
 
 * _Open web browser_
-* _Enter website address "https://github.com/paulguevarra/pizza"_
+* _Enter website address "https://paulguevarra.github.io/pizza/"_
 * _Browse through content_
 
 ## Specs "it can..."

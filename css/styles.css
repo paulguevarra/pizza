@@ -29,6 +29,8 @@ img {
   border-width: thick;
   border-color: black;
   border-style: solid;
+  width: 100%;
+  height: auto;
 }
 h1 {
   text-align: center;
@@ -49,6 +51,5 @@ h2 {
   font-size: 20pt;
 }
 #finalPizza {
-  width: 100%;
-  height: auto;
+
 }

@@ -15,19 +15,10 @@ _This web application will allow a user to choose one or more individual topping
 * _Browse through content_
 
 ## Specs "it can..."
-
-* _Program will add one topping to a pizza_
-  _Input = "pepperoni"_
-  _Output = "pizza + pepperoni"_
-* _Program will add multiple toppings to a pizza_
-  _Input = "pepperoni and onions"_
-  _Output = "pizza + pepperoni + onions"_
-* _Program will calculate cost to a pizza depending on size_
-  _Input = "medium"_
-  _Output = "pizza = $15"_
-* _Program will calculate cost to a pizza depending on amount of toppings_
-  _Input = "pizza + 1st topping + 2nd topping"_
-  _Output = "pizza + $1.00 + $1.00"_
+| Description                                        | Input                                       | Output              |
+| -------------------------------------------------- | -------------------------------------------:| ------------------: |
+| Find cost to pizza depending on size               | medium                                      | pizza = $10         |
+| Find cost to pizza depending on amount of toppings | med pizza + meat topping + non-meat topping | $10 + $2.00 + $1.00 |
 
 
 

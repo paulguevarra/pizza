@@ -8,6 +8,46 @@
     <title>Pizza</title>
   </head>
   <body>
+    <div class="container">
+<!--Survey Form-->
+      <div id="survey" class="col-sm-4 well">
+        <h1>Place Order Here</h1>
+        <form id="blanks">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="size">Choose a size</label>
+            <select class="form-control" id="platform">
+              <option value="no">Small</option>
+              <option value="game">Medium</option>
+              <option value="mobile">Large</option>
+              <option value="web">X-Large</option>
+            </select>
+          <div class="form-group">
+            <p>Choose your toppings:</p>
+            <input type="checkbox" name="topping" value="pepperoni"> pepperoni<br>
+            <input type="checkbox" name="topping" value="bacon"> bacon<br>
+            <input type="checkbox" name="topping" value="anchovies"> anchovies<br>
+            <input type="checkbox" name="topping" value="ham"> ham<br>
+            <input type="checkbox" name="topping" value="onions"> onions<br>
+            <input type="checkbox" name="topping" value="pineapple"> pineapple<br>
+            <input type="checkbox" name="topping" value="bell"> bell pepper<br>
+          </div>
+          <br>
+          <button type="submit" class="btn">Submit Order</button>
+        </form>
+      </div>
+<!--Survey Form End-->
+    </div>
+<!--Receipt-->
+    <div class="receipt">
+        <ul>
+
+        </ul>
+    </div>
+<!--Survey Form End-->
 
   </body>
 </html>
